@@ -4,7 +4,7 @@ particlesJS.load('particles-js', 'particlesjs-config.json', function() {
   });
 
 
-  let button1 = document.querySelector(".play");
+  let button1 = document.querySelector("#buttton");
 
 
 
@@ -12,6 +12,10 @@ button1.addEventListener('click', event =>{
   window.location.replace("https://peddiecompsciclub.github.io/astronomyclubwebsite/videos.html");
 });
 
+
+button1.addEventListener('hover', event =>{
+  window.location.replace("https://peddiecompsciclub.github.io/astronomyclubwebsite/videos.html");
+});
 let db = firebase.database();
 
 let database = db.ref();
