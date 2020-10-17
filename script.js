@@ -4,6 +4,8 @@ particlesJS.load('particles-js', 'particlesjs-config.json', function() {
   });
 
 
+
+
   let button1 = document.querySelector("#buttton");
 
 
@@ -16,18 +18,21 @@ button1.addEventListener('click', event =>{
 button1.addEventListener('hover', event =>{
   window.location.replace("https://peddiecompsciclub.github.io/astronomyclubwebsite/videos.html");
 });
-let db = firebase.database();
-
-let database = db.ref();
-
-console.log(database)
 
 
-function updateDB(event){
-  event.preventDefault();
+// Create a reference with an initial file path and name
+let intro = document.querySelector(".bruh");
 
-  value = {
-    video: vid,
 
-  };
-}
+
+
+var pathReference = storage.ref('intro.mp4').getDownloadURL()
+
+
+  intro.src = pathReference;
+
+
+
+
+
+console.log(pathReference);
