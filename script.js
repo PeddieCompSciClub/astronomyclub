@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particlesjs-config.json', function() {
 
 
 button1.addEventListener('click', event =>{
-  window.location.replace("https://peddiecompsciclub.github.io/astronomyclubwebsite/videos.html");
+  window.location.replace("https://peddiecompsciclub.github.io/astronomyclub/videos.html");
 });
 
 
